@@ -33,7 +33,7 @@ public class CartaoController {
 	 * @param Id do cliente a ser consultado
 	 * @return Lista de cartões que o cliente possui
 	 */
-	@GetMapping(value = "/cliente/{clienteId}")
+	@GetMapping(value = "/cliente/{clienteId}")	
 	public ResponseEntity<List<Cartao>> buscarPorClienteId(@PathVariable("clienteId") int clienteId) {
 		try {
 			log.info("Controller: buscando cartões do cliente de ID: {}", clienteId);
